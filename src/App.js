@@ -16,6 +16,7 @@ function App() {
     setTarefa([...tarefas, { nome_tarefa, data_inicial, time_inicial, data_final, time_final, id }]);
   };
 
+
   return (
     <div className="App">
       <Form onSave={adicionarTarefas} />
@@ -30,19 +31,7 @@ export default App;
 
 
 
-/*const organizarListByData = (tarefas: Array) => {
-   tarefas.map((tarefa, index) => {
-     const data1: Date = tarefa.data_inicial;
-     var c = tarefa;
-     if (index + 1 > tarefas.length) {
-       const data2: Date = tarefas[index + 1].data_inicial;
-       if (data1 > data2) {
-         setTarefa([tarefas[index], tarefas[index + 1]]);
-         setTarefa([tarefas[index + 1], c]); //talvez usar uma lista de tarefas novas e setTarefa([tarefas]); pode ser melhor
-       }
-     } else
-       return (0);
-   })
+/*
  }*/
 
 
@@ -63,3 +52,27 @@ export default App;
         })
       }
     </div>*/
+
+
+/* const organizarListByData = () => {
+let novalista = tarefas;
+tarefas.map(function (tarefa, index) {
+ const data1: Date = tarefa.data_inicial;
+ var c = tarefa;
+ console.log("Teste1");
+ console.log(index + 1);
+ console.log(tarefas.length);
+ if (index + 1 < tarefas.length) {
+   console.log("entrou");
+   const data2: Date = tarefas[index + 1].data_inicial;
+   if (data1 > data2) {
+     novalista[index] = tarefas[index + 1];
+     //console.log([tarefas[index], tarefas[index + 1]]);
+     novalista[index + 1] = c; //talvez usar uma lista de tarefas novas e setTarefa([tarefas]); pode ser melhor
+   }
+ }
+
+})
+console.log(tarefas)
+setTarefa([tarefas, { novalista }]);
+}*/
