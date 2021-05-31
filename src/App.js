@@ -17,7 +17,8 @@ function App() {
     incrementId(id + 1);
     setTarefa([...tarefas, { nome_tarefa, data_inicial, time_inicial, data_final, time_final, id }]);
   };
-  const organizarListByData = (tarefas: Array) => {
+
+  /*const organizarListByData = (tarefas: Array) => {
     tarefas.map((tarefa, index) => {
       const data1: Date = tarefa.data_inicial;
       var c = tarefa;
@@ -30,7 +31,7 @@ function App() {
       } else
         return (0);
     })
-  }
+  }*/
 
   return (
     <div className="App">

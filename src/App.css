@@ -47,6 +47,11 @@ table caption {
   margin-top: 50px;
 }
 
+.responsive-table {
+  max-width: 100;
+  overflow-x: auto;
+}
+
 /* form*/
 
 .form-tarefa .date-field {
