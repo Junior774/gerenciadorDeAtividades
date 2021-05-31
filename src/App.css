@@ -23,6 +23,12 @@
   color: #61dafb;
 }
 
+button {
+  margin-left: 8px;
+  width: 200px;
+  height: 30px;
+}
+
 /* table aqui*/
 
 table {
