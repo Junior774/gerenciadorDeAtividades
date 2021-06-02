@@ -4,7 +4,8 @@
 import { useState } from 'react';
 import './App.css';
 import { Form } from './components/Form';
-import { Tabela } from './components/Tabela_Tarefas/index';
+import { Menu } from './components/Menu';
+
 
 function App() {
   const [id, incrementId] = useState(0);
@@ -16,11 +17,11 @@ function App() {
     setTarefa([...tarefas, { nome_tarefa, data_inicial, time_inicial, data_final, time_final, id }]);
   };
 
-
+  //      <Tabela tarefas={tarefas} />
   return (
     <div className="App">
+      <Menu tarefas={tarefas} />
       <Form onSave={adicionarTarefas} />
-      <Tabela tarefas={tarefas} />
     </div>
   );
 }

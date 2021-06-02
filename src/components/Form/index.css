@@ -1,0 +1,14 @@
+.form-tarefa .date-field {
+  font-size: 20px;
+}
+
+.text-field {
+  font-size: 22px;
+}
+
+.add-tarefas {
+  margin-left: 8px;
+  margin-top: 200px;
+  width: 200px;
+  height: 30px;
+}

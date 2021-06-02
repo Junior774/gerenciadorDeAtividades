@@ -5,13 +5,15 @@ import './index.css';
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
-
+import { Tabela } from './components/Tabela/index.js';
+// // <Route exact path="/tabela" component={(props) => <Tabela {...props} />} />
+//<Route exact path="/tabela" render={(props) => <Tabela{...props}/>} />
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={App} exact>
-        </Route>
+        <Route path="/" component={App} exact />
+        <Route exact path="/tabela" render={(props) => <Tabela{...props} name={"Junior"} />} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-
+import './index.css';
 export function Form(props) {
   //const outraForma = props.onSave;
   const [nome_tarefa, setText] = useState("");
@@ -12,7 +12,7 @@ export function Form(props) {
       <input type="text" className="text-field" onChange={e => setText(e.currentTarget.value)} />
       <input type="datetime-local" className="date-field" onChange={e => setDate(e.currentTarget.value)} />
       <input type="datetime-local" className="date-field" onChange={e => setDateFim(e.currentTarget.value)} />
-      <button onClick={() => props.onSave({
+      <button className="add-tarefas" onClick={() => props.onSave({
         nome_tarefa: nome_tarefa,
         data_inicial: data_inicio.slice(0, 10),
         time_inicial: data_inicio.slice(11, data_inicio.length),
