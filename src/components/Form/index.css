@@ -1,3 +1,12 @@
+.form-tarefa {
+  padding-bottom: 50px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .form-tarefa .date-field {
   font-size: 20px;
 }
@@ -8,7 +17,11 @@
 
 .add-tarefas {
   margin-left: 8px;
-  margin-top: 200px;
+  margin-top: 50px;
   width: 200px;
   height: 30px;
+}
+
+.titulo-add-tarefa {
+  margin-top: 150px;
 }

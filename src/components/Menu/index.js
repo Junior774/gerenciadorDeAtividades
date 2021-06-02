@@ -4,15 +4,15 @@ import { Tabela } from '../Tabela';
 
 
 export function Menu(props) {
-  console.log(props);
-  console.log(props.tarefas)
+  // console.log(props);
+  // console.log(props.tarefas)
   return (
     <div className="back">
-      <nav>
+      <nav className="nav-menu">
         <Link to={{
           pathname: '/tabela',
           state: props,
-        }}> Monstrar Tabela </Link>
+        }}><h2>Monstrar Tabela</h2></Link>
       </nav>
     </div>
   )

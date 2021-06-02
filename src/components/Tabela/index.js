@@ -4,10 +4,8 @@ import './index.css';
 
 export function Tabela(props) { //obs: de class para esta div q é criada.
   //console(this.props.location.state)
-  console.log("aqui");
-  console.log(props.location.state);
-  const { tarefas } = props.location.state;
 
+  const tarefas = props.location.state.tarefas;
   return (
     <table className="conteiner-lista">
       <caption>Tabela de Atividades</caption>

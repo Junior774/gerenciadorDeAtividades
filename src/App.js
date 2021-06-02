@@ -19,6 +19,7 @@ function App() {
 
   //      <Tabela tarefas={tarefas} />
   return (
+
     <div className="App">
       <Menu tarefas={tarefas} />
       <Form onSave={adicionarTarefas} />
