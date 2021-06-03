@@ -6,6 +6,8 @@ import App from './App';
 
 import reportWebVitals from './reportWebVitals';
 import { Tabela } from './components/Tabela/index.js';
+import { Relatorio } from './components/Relatorio';
+
 // // <Route exact path="/tabela" component={(props) => <Tabela {...props} />} />
 //<Route exact path="/tabela" render={(props) => <Tabela{...props}/>} />
 ReactDOM.render(
@@ -14,6 +16,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/" component={App} exact />
         <Route exact path="/tabela" render={(props) => <Tabela{...props} name={"Junior"} />} />
+        <Route exact path="/relatorio" render={(props) => <Relatorio{...props} name={"Junior"} />} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

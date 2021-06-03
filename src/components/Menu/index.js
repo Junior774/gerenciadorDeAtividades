@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Tabela } from '../Tabela';
+
 
 
 
@@ -12,7 +12,13 @@ export function Menu(props) {
         <Link to={{
           pathname: '/tabela',
           state: props,
-        }}><h2>Monstrar Tabela</h2></Link>
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        }}><h1 className="menu-link">Monstrar Tabela</h1></Link>
+        <Link to={{
+          pathname: '/relatorio',
+          state: props,
+          // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        }}><h1 className="menu-link">Monstrar Relatorio</h1></Link>
       </nav>
     </div>
   )

@@ -7,14 +7,14 @@ import { Form } from './components/Form';
 import { Menu } from './components/Menu';
 
 
-function App() {
+function App() { //Tela adicionar Tarefas.
   const [id, incrementId] = useState(0);
   const [tarefas, setTarefa] = useState([]); //tarefas é o array onde a lista será gravada, set é pra alterar ele.
 
 
-  const adicionarTarefas = ({ nome_tarefa, data_inicial, time_inicial, data_final, time_final }) => {
+  const adicionarTarefas = ({ nome_tarefa, data_inicial, data_final, }) => {
     incrementId(id + 1);
-    setTarefa([...tarefas, { nome_tarefa, data_inicial, time_inicial, data_final, time_final, id }]);
+    setTarefa([...tarefas, { nome_tarefa, data_inicial, data_final, id }]);
   };
 
   //      <Tabela tarefas={tarefas} />
