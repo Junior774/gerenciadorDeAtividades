@@ -15,8 +15,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" component={App} exact />
-        <Route exact path="/tabela" render={(props) => <Tabela{...props} name={"Junior"} />} />
-        <Route exact path="/relatorio" render={(props) => <Relatorio{...props} name={"Junior"} />} />
+        <Route exact path="/tabela" render={(props) => <Tabela{...props} />} />
+        <Route exact path="/relatorio" render={(props) => <Relatorio{...props} />} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

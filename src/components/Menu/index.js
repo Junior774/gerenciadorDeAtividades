@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-
+import './index.css';
 
 export function Menu(props) {
   // console.log(props);

@@ -17,7 +17,7 @@ function App() { //Tela adicionar Tarefas.
     setTarefa([...tarefas, { nome_tarefa, data_inicial, data_final, id }]);
   };
 
-  //      <Tabela tarefas={tarefas} />
+  //      
   return (
 
     <div className="App">
