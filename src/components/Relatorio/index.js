@@ -1,6 +1,6 @@
 
 
-import './index.css';
+import './styles.css';
 
 import { calculaTempoGasto } from '../../utils/calculaTempoGasto';
 import { formatMinutesToTime } from '../../utils/formatMinutesToTime';
@@ -76,7 +76,7 @@ export function Relatorio(props) {
       </div>
 
     );
-  } else {
-    return <span>Nenhuma Tarefa!</span>;
   }
+  return <span>Nenhuma Tarefa!</span>;
+
 }

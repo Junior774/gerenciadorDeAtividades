@@ -5,7 +5,7 @@ export function formatMinutesToTime(minutes) { //retorna HH:MM
 
 
 function pad(d) {
-  return (d < 10) ? '0' + d.toString() : d.toString();
+  return (d < 10) ? '0' + d.toString() : d.toString(); // d < 10 ? se sim preenche com 0.
 }
 
 

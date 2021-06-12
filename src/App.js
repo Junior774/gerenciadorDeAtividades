@@ -1,10 +1,15 @@
 //import logo from './logo.svg';
-//Ter problemas no código é o que faz você aprender.
+/*Crie um repositório no seu GitHub para o seguinte projeto:
+Desenvolva uma aplicação web, client-server, para gerenciar atividades e tempo despendido.
+Crie uma página para registrar atividades(nome apenas) e periodo trabalhado, com data/hora início e fim.
+Em outra página, crie um relatório de tempo gasto por dia e as atividades envolvidas.
+Use as tecnologias nas quais se sentir mais confortável para desenvolver.*/
 
+import React from 'react';
 import { useState } from 'react';
 import './App.css';
-import { Form } from './components/Form';
 import { Menu } from './components/Menu';
+import { FormikTeste } from './components/Form/testeFormik';
 
 
 function App() { //Tela adicionar Tarefas.
@@ -22,7 +27,7 @@ function App() { //Tela adicionar Tarefas.
 
     <div className="App">
       <Menu tarefas={tarefas} />
-      <Form onSave={adicionarTarefas} />
+      <FormikTeste onSave={adicionarTarefas} />
     </div>
   );
 }

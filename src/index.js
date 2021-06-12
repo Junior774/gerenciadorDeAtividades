@@ -8,8 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { Tabela } from './components/Tabela/index.js';
 import { Relatorio } from './components/Relatorio';
 
-// // <Route exact path="/tabela" component={(props) => <Tabela {...props} />} />
-//<Route exact path="/tabela" render={(props) => <Tabela{...props}/>} />
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
