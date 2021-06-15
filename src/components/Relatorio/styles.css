@@ -7,8 +7,13 @@
   align-items: flex-start;
 }
 
+.div-dia {
+  padding-top: 20px;
+}
+
 .div-dia .dia {
   font-size: 40px;
+  color: #32cd32;
 }
 
 .div-dia h2 {
@@ -19,4 +24,11 @@
 .div-dia h3 {
   font-size: 20px;
   margin-top: 15px;
+}
+
+.div-dia .mes {
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #00008b;
 }

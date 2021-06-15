@@ -14,9 +14,8 @@ export function Tabela(props) { //obs: de class para esta div q é criada.
         <tr>
           <th className="nome-tarefa">Nome Tarefa</th>
           <th className="data-inicial">Data Inicial</th>
-          <th className="time-inicial">Hora de Início</th>
           <th className="data-final">Data final</th>
-          <th className="time-final">Hora final</th>
+          <th colSpan="2" className="periodo-trabalho">Período de trabalho</th>
         </tr>
       </thead>
       <tbody>

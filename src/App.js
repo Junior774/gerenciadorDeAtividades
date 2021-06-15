@@ -17,9 +17,9 @@ function App() { //Tela adicionar Tarefas.
   const [tarefas, setTarefa] = useState([]); //tarefas é o array onde a lista será gravada, set é pra alterar ele.
 
 
-  const adicionarTarefas = ({ nome_tarefa, data_inicial, data_final, }) => {
+  const adicionarTarefas = ({ nome_tarefa, data_inicial, data_final, hora_inicial, hora_final }) => {
     incrementId(id + 1);
-    setTarefa([...tarefas, { nome_tarefa, data_inicial, data_final, id }]);
+    setTarefa([...tarefas, { nome_tarefa, data_inicial, data_final, hora_inicial, hora_final, id }]);
   };
 
   //      
