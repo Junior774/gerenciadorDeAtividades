@@ -72,6 +72,7 @@ function mapearDias(tarefas) { // passar tarefas já ordenada, a função retorn
   tarefas.map(function (tarefa, index) {
 
     dia = calculaDias(tarefa.data_inicial, tarefa.data_final, dia);
+    return null;
   })
   return dia;
 }
@@ -87,6 +88,7 @@ function fazRelatorio(diasMapeados, tarefas) { // passar tarefas já ordenada, a
     console.log(atividades);
     relatorio.tempoGastoTotal += calculaTempoGastodia(atividades);
     relatorio.dias.push({ day: dia_atual, tarefas: atividades, tempo_gasto_dia: formatMinutesToTime(calculaTempoGastodia(atividades)) })
+    return null;
   })
   relatorio.tempoGastoTotal = formatMinutesToTime(relatorio.tempoGastoTotal);
   return relatorio;

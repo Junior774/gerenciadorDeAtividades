@@ -3,7 +3,6 @@
 import './styles.css';
 
 import { Formik, Field } from 'formik';
-import { calculaDiffDays } from '../../utils/calculaDiffDays';
 import { pad } from '../../utils/formatMinutesToTime';
 
 export function FormikTeste(props) {
@@ -79,7 +78,7 @@ export function FormikTeste(props) {
             </div>
             <div className="form-row">
               <div className="btn-salvar">
-                <button className="add-tarefas" type="submit" onClick={() => {
+                <button className="ui primary button add-tarefas" type="submit" onClick={() => {
                   props.onSave({
                     nome_tarefa: values.nome_tarefa,
                     data_inicial: values.data_inicio,
@@ -88,6 +87,9 @@ export function FormikTeste(props) {
                     hora_final: values.time_fim,
                   })
                 }}>Salvar</button>
+              </div>
+              <div className="btn-limpar">
+                <button className="ui primary negative ui button btn-limpar" type="submit" onClick={() => props.onClear()}>Limpar Tarefas</button>
               </div>
             </div>
           </form>

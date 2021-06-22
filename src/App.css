@@ -23,6 +23,12 @@
   color: #61dafb;
 }
 
+.btn-linkdin {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
 /* lista aqui 
 
 .conteiner-lista {
